@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101522">
+    <meta name="description" content="ماشین حسابی ساده، سریع و واکنش‌گرا برای انجام محاسبات روزمره">
+    <title>ماشین حساب | محاسبه‌گر</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="page">
+        <header class="page-header">
+            <div class="header-brand-group">
+                <a class="brand" href="./" aria-label="صفحه اصلی محاسبه‌گر" data-i18n-aria="brandLabel">
+                    <span class="brand-mark" aria-hidden="true">∑</span>
+                    <span data-i18n="brand">محاسبه‌گر</span>
+                </a>
+                <label class="language-picker">
+                    <span class="visually-hidden" id="language-label" data-i18n="languageLabel">انتخاب زبان</span>
+                    <select id="language-selector" aria-labelledby="language-label">
+                        <option value="fa">فارسی</option>
+                        <option value="en">English</option>
+                        <option value="it">Italiano</option>
+                        <option value="de">Deutsch</option>
+                    </select>
+                </label>
+            </div>
+            <span class="header-note"><span class="status-dot"></span><span id="status-text" data-i18n="status">همیشه آماده‌ی محاسبه</span></span>
+        </header>
+
+        <section class="calculator" aria-labelledby="calculator-title">
+            <div class="calculator-heading">
+                <div>
+                    <p class="eyebrow" data-i18n="eyebrow">سریع و دقیق</p>
+                    <h1 id="calculator-title" data-i18n="title">ماشین حساب</h1>
+                </div>
+                <span class="calculator-icon" aria-hidden="true">＋</span>
+            </div>
+
+            <div class="display" aria-label="نمایشگر ماشین حساب" data-i18n-aria="displayLabel">
+                <p class="display-expression" id="expression" aria-live="polite"></p>
+                <output class="display-value" id="display" aria-live="assertive" aria-atomic="true">0</output>
+            </div>
+
+            <div class="keypad" aria-label="کلیدهای ماشین حساب" data-i18n-aria="keypadLabel">
+                <button class="key key-utility" type="button" data-action="clear" aria-label="پاک کردن همه" data-i18n-aria="clearAll">AC</button>
+                <button class="key key-utility" type="button" data-action="sign" aria-label="تغییر علامت" data-i18n-aria="changeSign">±</button>
+                <button class="key key-utility" type="button" data-action="percent" aria-label="درصد" data-i18n-aria="percent">%</button>
+                <button class="key key-operator" type="button" data-operator="/" aria-label="تقسیم" data-i18n-aria="divide">÷</button>
+
+                <button class="key" type="button" data-digit="7">7</button>
+                <button class="key" type="button" data-digit="8">8</button>
+                <button class="key" type="button" data-digit="9">9</button>
+                <button class="key key-operator" type="button" data-operator="*" aria-label="ضرب" data-i18n-aria="multiply">×</button>
+
+                <button class="key" type="button" data-digit="4">4</button>
+                <button class="key" type="button" data-digit="5">5</button>
+                <button class="key" type="button" data-digit="6">6</button>
+                <button class="key key-operator" type="button" data-operator="-" aria-label="تفریق" data-i18n-aria="subtract">−</button>
+
+                <button class="key" type="button" data-digit="1">1</button>
+                <button class="key" type="button" data-digit="2">2</button>
+                <button class="key" type="button" data-digit="3">3</button>
+                <button class="key key-operator" type="button" data-operator="+" aria-label="جمع" data-i18n-aria="add">+</button>
+
+                <button class="key key-zero" type="button" data-digit="0">0</button>
+                <button class="key" type="button" data-action="decimal" aria-label="ممیز" data-i18n-aria="decimal">.</button>
+                <button class="key key-equals" type="button" data-action="equals" aria-label="محاسبه نتیجه" data-i18n-aria="equals">=</button>
+            </div>
+
+            <section class="history" aria-labelledby="history-title">
+                <div class="history-heading">
+                    <h2 id="history-title" data-i18n="historyTitle">محاسبات اخیر</h2>
+                    <button class="clear-history" type="button" id="clear-history" data-i18n="clearHistory">پاک کردن</button>
+                </div>
+                <ul class="history-list" id="history-list" aria-live="polite">
+                    <li class="history-empty" data-i18n="historyEmpty">محاسبات شما اینجا نمایش داده می‌شود.</li>
+                </ul>
+            </section>
+        </section>
+
+        <p class="keyboard-hint"><span data-i18n="keyboardHint">می‌توانید از صفحه‌کلید هم استفاده کنید</span> <kbd>Enter</kbd> <span data-i18n="keyboardResult">برای نتیجه</span> <kbd>Esc</kbd> <span data-i18n="keyboardClear">برای پاک کردن</span></p>
+        <footer class="page-footer">
+            <span data-i18n="footer">ساخته‌شده برای محاسبه‌های هر روز</span>
+            <span class="footer-credit" data-i18n="credit">تولید شده توسط Mr.mohammad_fspm_256 با استفاده از روش وایب کدینگ</span>
+        </footer>
+    </main>
+</body>
+</html>

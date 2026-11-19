@@ -33,14 +33,6 @@ For easier development, you can use the Live Server plugin in Visual Studio Code
 | ``Escape'' | Clear calculation
 | `%` | Convert number to percentage
 
-## Publishing on GitHub Pages
-
-1. Place these four files in your GitHub repository.
-2. In the repository, go to **Settings → Pages**.
-3. Select the option to publish from the desired directory (usually ``main'' and the ``/root'' folder).
-4. After saving, the website address will be displayed in the same section.
-The Vazirmatn font is downloaded from Google Fonts; If it cannot be accessed, the device's alternative font will be used.
-
 ## Manufacturer
 
 Produced by **Mr.mohammad_fspm_256** using **Vibe Coding** method.
@@ -79,14 +71,6 @@ lunguge the persion
 | `Escape` | پاک‌کردن محاسبه |
 | `%` | تبدیل عدد به درصد |
 
-## انتشار در GitHub Pages
-
-1. این چهار فایل را در مخزن GitHub خود قرار دهید.
-2. در مخزن، به **Settings → Pages** بروید.
-3. گزینه‌ی انتشار از شاخه‌ی موردنظر (معمولاً `main` و پوشه‌ی `/root`) را انتخاب کنید.
-4. پس از ذخیره، آدرس سایت در همان بخش نمایش داده می‌شود.
-
-فونت Vazirmatn از Google Fonts بارگیری می‌شود؛ اگر دسترسی به آن ممکن نباشد، فونت جایگزین دستگاه استفاده خواهد شد.
 
 ## سازنده
 
